@@ -1,20 +1,3 @@
-    <script>
-        fetch('http://localhost:8082/api')
-        .then(response => {
-            if(response.ok) {
-                return response.json()
-            } else {
-                console.error('Erro ao buscar dados da api: ', response.status)
-            }
-        })
-        .then(data => {
-            console.log(data)
-        })
-        .catch(err => {
-            console.error('Erro ao busca dados da api', err)
-        })
-    </script>
-
     <!--Snow animations-->
     <div class="bg-animation">
         <div id="stars"></div>
@@ -40,3 +23,20 @@
 
 <!--Scripts-->
 <script src="/assets/scripts/script.js"></script>
+
+ <script>
+    fetch('http://localhost:3000/api')
+    .then(response => {
+        if(response.ok) {
+            return response.json()
+        } else {
+            console.error('Erro ao buscar dados da api: ', response.status)
+        }
+    })
+    .then(data => {
+        console.log(data)
+    })
+    .catch(err => {
+        console.error('Erro ao busca dados da api', err)
+    })
+</script>
