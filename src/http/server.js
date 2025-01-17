@@ -2,4 +2,4 @@ import { App } from "./app.js";
 
 const app = new App();
 
-app.listen(8082);
+app.listen(3000);
